@@ -105,7 +105,8 @@ def main():
     parser.add_argument("--timeout", default=1.5, type=float, help="Socket timeout")
     args = parser.parse_args()
 
-    console.print("[bold red]  CCTV HUNTER[/bold red]")
+    from banner import BANNER
+    console.print(f"[bold red]{BANNER}[/bold red]")
     console.print("[dim]Network CCTV Camera Discovery Tool[/dim]\n")
 
     ports = [int(p) for p in args.ports.split(",")] if args.ports else CCTV_PORTS
