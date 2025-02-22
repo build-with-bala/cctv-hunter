@@ -1,0 +1,9 @@
+[project]
+name = "cctv-hunter"
+version = "1.0.0"
+description = "Network CCTV camera discovery and security assessment tool"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[project.scripts]
+cctv-hunter = "src.scanner:main"
