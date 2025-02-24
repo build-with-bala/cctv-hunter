@@ -7,6 +7,9 @@ import socket
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 from rich.console import Console
 from rich.table import Table
