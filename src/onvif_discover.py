@@ -2,7 +2,7 @@
 """ONVIF WS-Discovery for network cameras."""
 
 import socket
-import struct
+
 
 ONVIF_DISCOVER_MSG = """<?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
